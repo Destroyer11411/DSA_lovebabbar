@@ -187,3 +187,143 @@
 //         e--;
 //     }
 // }
+
+
+
+// Homework
+// swapping alternate elements
+// #include<iostream>
+// using namespace std;
+
+// void printarray(int a[],int n)
+// {
+//     for(int i=0;i<n;i++)
+//     {
+//         cout<<a[i]<<"\t";
+
+//     }
+// }
+
+// void reversealternate(int a[],int n)
+// {
+//     int s=0;
+//     int e=n-1;
+
+//     for(int i=0;i<n;i++)
+//     {
+//         if(s<e){
+//             swap(a[s],a[e]);
+//            s=s+2;
+//            e=e-2;
+//         }
+//         else{
+//             break;
+//         }
+        
+//     }
+// }
+
+// int main()
+// {
+//     int a[10] = {1,2,3,4,5,6,7,8,9,10};
+//     reversealternate(a,10);
+//     printarray(a,10);
+// }
+
+
+// finding unique element in the array
+
+// #include<iostream>
+// using namespace std;
+
+
+// void uniqueele(int a[],int n);
+// void printarray(int a[],int n)
+// {
+//     for(int i=0;i<n;i++)
+//     {
+//         cout<<a[i]<<"\t";
+
+//     }
+// }
+
+
+// int main()
+// {
+//     int n=10;
+//     int arr[n] = {3,2,2,3,4,5,2,1,7,8};
+
+//     uniqueele(arr,n);
+//     return  0;
+
+// }
+
+
+// void uniqueele(int a[],int n)
+// {
+//     int i,j;
+
+//     for(i-0;i<n;i++)
+    
+//     {
+//         for(j=0;j<n;j++)
+//         {
+//             if((a[i]==a[j]) && (i!=j))
+//             {
+//                 break;
+
+//             }
+
+//             if(j==n)
+//             {
+//                 cout<<a[i]<<endl;
+//             }
+            
+//         }
+//         // if(i==j)
+//         //     cout<<a[i]<<endl;
+        
+//     }
+// }
+
+
+// swapping alternate
+#include<iostream>
+using namespace std;
+
+void alternate(int a[],int n);
+void printarray(int a[],int n)
+{
+    for(int i=0;i<n;i++)
+    {
+        cout<<a[i]<<"\t";
+
+    }
+}
+
+int main()
+{
+    int n=10;
+    int a[n] = {1,2,3,4,5,6,7,8,9,10};
+
+    alternate(a,n);
+    printarray(a,n);
+
+
+}
+
+void alternate(int a[],int n)
+{
+    int s=0;
+    int e=1;
+
+    for(int i=0;i<n;i++)
+    {
+        if(s<n && e<n)
+        {
+            swap(a[s],a[e]);
+            s=s+2;
+            e=e+2;
+        }
+    }
+}
