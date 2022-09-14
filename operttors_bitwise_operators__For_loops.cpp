@@ -13,6 +13,13 @@
 
 // }
 
+
+
+
+
+
+
+
 // #include<iostream>
 // using namespace std;
 
@@ -26,6 +33,16 @@
 
 //     cout<<(5>>2)<<endl;
 // }
+
+
+
+
+
+
+
+
+
+
 
 // Prime numbers
 
@@ -46,6 +63,11 @@
 //     }
 
 // }
+
+
+
+
+
 
 
 // #include<iostream>
@@ -84,6 +106,18 @@
 //         i++;
 //     }
 // }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // #include<iostream>
