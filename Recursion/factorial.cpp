@@ -1,24 +1,25 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int factorial(int n)
+int factn(int n)
 {
     if(n==0)
-    {
         return 1;
-    }
-    int ans = n * factorial(n-1);
+
+    int ans = n * factn(n-1);
 
     return ans;
 }
 
+
 int main()
 {
-
     int n;
-    cout<<"Enter the number"<<endl;
+    cout<<"Enter the number factorial to be calculated on"<<endl;
     cin>>n;
 
-    int ans = factorial(n);
-    cout<<ans<<endl;
+
+    cout<<factn(n)<<endl;
+
+    return 0;
 }
